@@ -211,7 +211,7 @@ getPackageRecords <- function(pkgNames,
   externalPkgRecords <- suppressWarnings(
     getPackageRecordsExternalSource(pkgNames,
                                     available = available,
-                                    lib.loc = lib.loc,
+                                    lib.loc = libExtDir(),
                                     missing.package = function(...) NULL)
   )
 
